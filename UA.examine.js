@@ -17,8 +17,30 @@
 			return {
 			
 				// Examine browser is IE
-				isIE: function(){
-					return ( navigator.appName === 'Microsoft Internet Explorer' );
+				isIE: function( v ){
+				
+					if( v ){
+					
+						// User agent to uppercase
+						var __UA = __uAgent.toUpperCase(),
+						
+						    // Construct versions feature string
+						    v_str = 'MSIE ' + v + '.0';													
+						
+						// Find versions feature string
+						// If exists: true, Else: false
+						if( __UA.indexOf( v_str ) != -1 ){
+							return true;
+						}
+						else{
+							return false;
+						}
+					
+					}
+					else{
+						return ( navigator.appName === 'Microsoft Internet Explorer' );
+					}
+				
 				},
 				
 				// Examine browser is Firefox
