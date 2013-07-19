@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="UA.examine.js"></script>
+<title> UA.examine.js -- Usage example </title>
+<!-- KILLHAPPY. 2013-07-20 -->
+</head>
+
+<body>
+<script type="text/javascript">
+<!--
+var console = console || {
+        log: function( s ){
+            alert( s );
+        }
+    };
+
+(function(){
+
+    // Examine browser is IE
+    if( UA.examine.isIE() ){
+    
+        console.log( 'IE browser' );
+        
+        // Examine browser is IE6.0
+        if( UA.examine.isIE( 6 ) ){
+            console.log( 'IE 6.0' );	
+        }
+        
+        // Examine browser is IE7.0
+        if( UA.examine.isIE( 7 ) ){
+            console.log( 'IE 7.0' );	
+        }
+        
+        // Examine browser is IE8.0
+        if( UA.examine.isIE( 8 ) ){
+            console.log( 'IE 8.0' );	
+        }
+        
+        // Examine browser is IE9.0
+        if( UA.examine.isIE( 9 ) ){
+            console.log( 'IE 9.0' );	
+        }
+    
+    }
+    
+    // Examine browser is Firefox
+    if( UA.examine.isFirefox() ){		
+        console.log( 'Firefox browser' );	
+    }
+    
+    // Examine browser is Chrome
+    if( UA.examine.isChrome() ){		
+        console.log( 'Chrome browser' );	
+    }
+    
+    // Examine browser is Safari
+    if( UA.examine.isSafari() ){		
+        console.log( 'Safari browser' );	
+    }
+    
+    // Examine browser is Opera
+    if( UA.examine.isOpera() ){		
+        console.log( 'Opera browser' );	
+    }
+
+})();
+//-->
+</script>
+
+</body>
+</html>
