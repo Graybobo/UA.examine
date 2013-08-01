@@ -6,7 +6,7 @@ Examine browser's userAgent.
 ### Methods:
 
   - `UA.examine.isIE()` ---- 检测 IE ( 返回 Boolean 类型值 )
-  - `UA.examine.isIE( v )` ---- 检测 IE 版本[ v: 版本号 ] ( 返回 Boolean 类型值 )
+  - `UA.examine.isIE( v )` ---- 检测 IE 版本< v: 版本号 > ( 返回 Boolean 类型值 )
   - `UA.examine.isFirefox()` ---- 检测 Firefox ( 返回 Boolean 类型值 )
   - `UA.examine.isChrome()` ---- 检测 Chrome ( 返回 Boolean 类型值 )
   - `UA.examine.isSafari()` ---- 检测 Safari ( 返回 Boolean 类型值 )
