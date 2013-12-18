@@ -105,6 +105,11 @@ Examine browser's userAgent.
           console.log( 'Opera browser' );	
       }
 
+      // Examine browser whether support canvas
+      if( UA.examine.isSupportCanvas() ){		
+          console.log( 'Your browser support HTML5-canvas' );	
+      }
+
   })();
   //-->
   </script>
