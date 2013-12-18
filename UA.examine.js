@@ -61,6 +61,12 @@
 				// Examine browser is Opera			
 				isOpera: function(){
 					return (/opera(.*)\Wpresto\W/i).test( __uAgent );
+				},
+				
+				// Examine browser whether support canvas
+				isSupportCanvas: function(){
+					var canvas = document.createElement("canvas");
+					return !( canvas.getContext && canvas.getContext('2d') ) ? false : true;
 				}
 			
 			};
