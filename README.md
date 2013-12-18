@@ -11,6 +11,7 @@ Examine browser's userAgent.
   - `UA.examine.isChrome()` ---- 检测 Chrome ( 返回 Boolean 类型值 )
   - `UA.examine.isSafari()` ---- 检测 Safari ( 返回 Boolean 类型值 )
   - `UA.examine.isOpera()` ---- 检测 Opera ( 返回 Boolean 类型值 )
+  - `UA.examine.isSupportCanvas()` ---- 检测浏览器是否支持 HTML5 Canvas ( 返回 Boolean 类型值 )
   - `UA.userAgent()` ---- 返回浏览器 User Agent 信息
 
 ### 用法( Usage ):
